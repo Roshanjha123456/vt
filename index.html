@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <li><a href="welcome.html"></a></li>
+    <div class="container">
+        <h1>Log In For Vote</h1>
+        <div class="box">
+
+            NAME &#160 &#160 &#160 &#160 &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 &#160 :
+            <input type="email" name="E-mail" id="name" placeholder="Enter Your Name">
+        </div>
+        <div class="box">
+            <br>
+            AADHAR NUMBER &#160: <input type="email" name="E-mail" id="adno" placeholder="Enter Your Aadhar number">
+        </div>
+        <br>
+        <div class="box">
+
+            PAN &#160NUMBER &#160&#160&#160&#160&#160&#160&#160&#160&#160 : <input type="email" name="E-mail" id="pnno"
+                placeholder="Pan number">
+        </div>
+        <br>
+
+
+        <div class="box">
+
+            E-MAIL / PHONE &#160&#160&#160&#160&#160&#160: <input type="email" name="E-mail" id="email"
+                placeholder="Enter Your Email">
+        </div>
+        <br>
+        <div class="box">
+
+            PASSWORD &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 : <input type="email"
+                name="E-mail" id="password" placeholder="Enter Your Email">
+        </div>
+        <br>
+        <button id="btn" onclick="login()">Sign In</button>
+    </div>
+
+
+    <script>
+
+        function login() {
+            var name = document.getElementById('name').value;
+            var adno = document.getElementById('adno').value;
+            var pnno = document.getElementById('pnno').value;
+            var password = document.getElementById('password').value;
+            var email = document.getElementById('email').value;
+
+
+
+            if (name == "Roshan" && adno == "1" && pnno == "2" && password == "3" && email == "jha") {
+                location.assign("http://127.0.0.1:5500/welcome.html")
+                //window.alert("succcc");
+            }
+            else if (name == "Rohit" && adno == "4" && pnno == "5" && password == "6" && email == "shu") {
+                  location.assign("http://127.0.0.1:5500/welcome.html")
+              }
+
+
+            else {
+                window.alert("LOGIN FAILED PLEASES ENTER A VALID DETAIL");
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
